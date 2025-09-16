@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Shifoumi Game</title>
+    <script src="script/script.js" defer></script>
+</head>
+<body class="flex flex-col items-center justify-center bg-blue-200 p-4">
+    <h1 class="bg-black rounded text-white p-5 m-5 w-300 text-center ">Shifumi</h1>
+    <div class="animate-pulse w-300 h-50 bg-sky-500 flex justify-center items-center rounded outline-solid">
+        <p class="text-3xl justify-center" id="result"></p>
+    </div>
+    <div class="flex flex-row justify-center items-center">
+        <button class="cursor-pointer m-10 pt-3 pb-3 pl-10 pr-10 outline-solid border-0.2 bg-blue-300 rounded-full hover:bg-sky-700 hover:scale-120 duration-300 ease-in-out " id="pierre">pierre</button>
+        <button class="cursor-pointer m-10 pt-3 pb-3 pl-10 pr-10 outline-solid border-0.2 bg-blue-300 rounded-full hover:bg-sky-700 hover:scale-120 duration-300 ease-in-out " id="feuille">feuille</button>
+        <button class="cursor-pointer m-10 pt-3 pb-3 pl-10 pr-10 outline-solid border-0.2 bg-blue-300 rounded-full hover:bg-sky-700 hover:scale-120 duration-300 ease-in-out " id="ciseaux">ciseaux</button>
+    </div>
+    <div>
+        <p id="choixJoueur">Vous avez choisi :</p>
+        <p id="choixBot">Probot a choisi :</p>
+    </div>
+    <div class="flex flex-col items-center justify-center bg-blue-100 p-4 outline-solid rounded mt-3 mb-3">
+        <p id="nbVictoire">Nombre de victoire : 0</p>
+        <p id="nbDefaite">Nombre de défaite : 0</p>
+        <p id="nbEgalite">Nombre d'égalité : 0</p>
+    </div>
+    <div>
+        <button class="cursor-pointer m-5 pt-3 pb-3 pl-10 pr-10 outline-solid border-0.2 bg-blue-300 rounded-full hover:bg-sky-700 hover:scale-120 duration-300 ease-in-out " id="reinitialise">Réinitialiser stats</button>
+    </div>
+    
+</body>
+
+</html>
